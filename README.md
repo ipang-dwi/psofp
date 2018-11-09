@@ -5,7 +5,8 @@ Price Simulation and Order App - Firstplato - www.firstplato.com
 
 Apa saja yang bisa dipelajari pada file aplikasi ini :
 - Single Page Application atau SPA, yaitu penggunaan hanya satu halaman untuk mendapatkan input dari user dan mengolahnya, lalu memberikan output.
-- Web Based programming.
+- Web Based programming, dengan html5, native php, Bootstrap v4.x, jQuery 3.x
+- Perhitungan simulasi dan Format currency / mata uang Rupiah, dengan javascript
 
 > Demo aplikasi cek tkp https://www.firstplato.com/psofp
 
