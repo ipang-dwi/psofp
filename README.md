@@ -1,7 +1,9 @@
 # psofp
 Price Simulation and Order App - Firstplato - www.firstplato.com
 
-Aplikasi sederhana untuk melakukan simulasi perhitungan harga dan pembuatan invoice untuk customer. Apa saja yang bisa dipelajari pada file aplikasi ini :
+> Aplikasi sederhana untuk melakukan simulasi perhitungan harga dan pembuatan invoice untuk customer. 
+
+Apa saja yang bisa dipelajari pada file aplikasi ini :
 - Single Page Application atau SPA, yaitu penggunaan hanya satu halaman untuk mendapatkan input dari user dan mengolahnya, lalu memberikan output.
 - Web Based programming.
 
