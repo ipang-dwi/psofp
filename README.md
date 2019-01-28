@@ -1,4 +1,7 @@
 # psofp
+
+<img src="https://img.shields.io/github/license/ipang-dwi/xdesktop.svg" /> <img src="https://img.shields.io/badge/lab-firstplato.com-red.svg" />
+
 Price Simulation and Order App - Firstplato - www.firstplato.com
 
 > Aplikasi sederhana untuk melakukan simulasi perhitungan harga dan pembuatan invoice untuk customer. 
