@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="icon" href="https://www.firstplato.com/favicon.ico">
+  <link rel="icon" href="https://www.firstplato.com/img/favicon.ico">
   <title>Price Simulation and Order App - Firstplato - www.firstplato.com</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -23,6 +23,11 @@
     <small id="nameHelp" class="form-text text-muted">Diperlukan untuk invoice dan privasi data Anda akan kami jaga.</small>
   </div>
   <div class="form-group">
+    <label for="hp">No. HP</label>
+    <input type="number" class="form-control" id="hp" aria-describedby="noHelp" placeholder="No. HP Anda" required />
+    <small id="nameHelp" class="form-text text-muted">Diperlukan untuk invoice dan privasi data Anda akan kami jaga.</small>
+  </div>
+  <div class="form-group">
     <label for="usaha">Perusahaan</label>
     <input type="text" class="form-control" id="usaha" aria-describedby="workHelp" placeholder="Nama Perusahaan / Instansi / Trademark Anda" required />
   </div>
@@ -38,7 +43,7 @@
   <div class="form-group">
     <label for="ext">Extension Domain</label>
     <select class="form-control" id="ext" onchange="myFunction()">
-	   <option value=0>- Pilih Extension Domain -</option>
+	   <option value=0>- Tanpa Domain -</option>
       <option value=168001>.COM - Rp. 168.001 / Tahun</option>
       <option value=168002>.NET - Rp. 168.002 / Tahun</option>
       <option value=168003>.ORG - Rp. 168.003 / Tahun</option>
@@ -46,38 +51,47 @@
       <option value=168005>.TECH - Rp. 168.005 / Tahun</option>
       <option value=275000>.ID - Rp. 275.000 / Tahun</option>
       <option value=160000>.CO.ID - Rp. 160.000 / Tahun</option>
-      <option value=90001>.AC.ID - Rp. 90.001 / Tahun</option>
-	  <option value=90002>.OR.ID - Rp. 90.002 / Tahun</option>
-      <option value=90003>.WEB.ID - Rp. 90.003 / Tahun</option>
-      <option value=90004>.SCH.ID - Rp. 90.004 / Tahun</option>
+      <option value=137000>.AC.ID - Rp. 137.000 / Tahun</option>
+	  <option value=97001>.OR.ID - Rp. 97.001 / Tahun</option>
+      <option value=97002>.WEB.ID - Rp. 97.002 / Tahun</option>
+      <option value=97003>.SCH.ID - Rp. 97.003 / Tahun</option>
+      <option value=15001>.MY.ID - Rp. 15.001 / Tahun</option>
     </select>
+    <small id="webemHelp" class="form-text text-muted">Domain yang Anda cari tidak ada di list di atas, silahkan hubungi kami di <a href="https://wa.me/628999302702?text=Saya%20tertarik%20untuk%20melakukan%20order%20custom%20domain%20di%20FirstPlato." target="_blank">sini</a>.</small>
   </div>
    <div class="form-group">
     <label for="hosting">Hosting</label>
     <select class="form-control" id="hosting" onchange="myFunction()">
-	   <option value=0>- Pilih Hosting -</option>
+	   <option value=0>- Tanpa Hosting -</option>
+	  <option value=100000>Shared Hosting 1GB SSD Tanpa Panel - Rp. 100.000 / Tahun</option>
+	  <option value=200001>Shared Hosting 3GB SSD Tanpa Panel - Rp. 200.001 / Tahun</option>
+	  <option value=200002>Shared Hosting 3GB SSD CyberPanel - Rp. 200.002 / Tahun</option>
       <option value=600000>Shared Hosting 1GB SSD - Rp. 600.000 / Tahun</option>
       <option value=1100000>Shared Hosting 5GB SSD - Rp. 1.100.000 / Tahun</option>
-      <option value=2000000>VPS 1 CPU 2GB RAM 20GB SSD  - Rp. 2.000.000 / Tahun</option>
-	  <option value=3500000>VPS 1 CPU 4GB RAM 55GB SSD - Rp. 3.500.000 / Tahun</option>
+      <option value=2900000>VPS 1 CPU 1GB RAM 25GB SSD  - Rp. 2.900.000 / Tahun</option>
+	  <option value=5300000>VPS 1 CPU 2GB RAM 50GB SSD - Rp. 5.300.000 / Tahun</option>
     </select>
   </div>
    <div class="form-group">
     <label for="webdev">Web Dev</label>
     <select class="form-control" id="webdev" onchange="myFunction()">
       <option value=0>- Tanpa Web Dev -</option>
-      <option value=3500000>Lite Enterprise Web Dev - Rp. 3.500.000</option>
+      <option value=730001>UMKM Web Dev - Rp. 730.001</option>
+      <option value=730002>Charity, Social and Educational Purpose Web Dev - Rp. 730.002</option>
+      <option value=2000001>School and Academic Profile Web Dev - Rp. 2.000.001</option>
+      <option value=2000002>Personal or Portfolio Web Dev - Rp. 2.000.002</option>
+      <option value=3900000>Lite Enterprise Web Dev - Rp. 3.900.000</option>
       <option value=6000000>Medium Enterprise Web Dev - Rp. 6.000.000</option>
 	  <option value=10000000>Big Enterprise Web Dev - Rp. 10.000.000</option>
     </select>
-	<small id="webemHelp" class="form-text text-muted">Lihat detail perbandingan <a href="#" data-toggle="modal" data-target="#myModal2">Fitur Web Dev</a>.</small>
+	<small id="webemHelp" class="form-text text-muted">Lihat detail perbandingan <a href="#" data-toggle="modal" data-target="#myModal2">Fitur Web Dev</a>. Jika Anda ingin membuat web custom, silahkan hubungi kami di <a href="https://wa.me/628999302702?text=Saya%20tertarik%20untuk%20melakukan%20order%20custom%20web%20di%20FirstPlato." target="_blank">sini</a>.</small>
   </div>
    <div class="form-group">
     <label for="webmod">Custom Web Module</label>
     <select class="form-control" id="webmod" onchange="myFunction()">
       <option value=0>- Tanpa Custom Web Module -</option>
-	  <option value=350000>Micro Custom Web Module - Rp. 350.000</option>
-      <option value=1000000>Lite Custom Web Module - Rp. 1.000.000</option>
+	  <option value=750000>Micro Custom Web Module - Rp. 750.000</option>
+      <option value=1500000>Lite Custom Web Module - Rp. 1.500.000</option>
       <option value=3000000>Medium Custom Web Module - Rp. 3.000.000</option>
 	  <option value=5000000>Big Custom Web Module - Rp. 5.000.000</option>
     </select>
@@ -86,10 +100,10 @@
     <label for="webem">Custom Enterprise Email</label>
     <select class="form-control" id="webem" onchange="myFunction()">
       <option value=0>- Tanpa Custom Enterprise Email -</option>
-	  <option value=500000>1-10 akun - Rp. 500.000</option>
-      <option value=1000000>11-50 - Rp. 1.000.000</option>
-      <option value=2000000>51-100 - Rp. 2.000.000</option>
-	  <option value=4000000>>100 - Rp. 4.000.000</option>
+	  <option value=750000>1-10 akun - Rp. 750.000 / Tahun</option>
+      <option value=1750000>11-50 - Rp. 1.750.000 / Tahun</option>
+      <option value=2750000>51-100 - Rp. 2.750.000 / Tahun</option>
+	  <option value=4000000>>100 - Rp. 4.000.000 / Tahun</option>
     </select>
 	<small id="webemHelp" class="form-text text-muted">Sekarang tiap akun akan mendapat unlimited mailbox size, dengan custom enterprise email. Kelebihan <a href="#" data-toggle="modal" data-target="#myModal">Custom Enterprise Email</a>.</small>
   </div>
